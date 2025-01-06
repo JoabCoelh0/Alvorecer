@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --font-titulo: "Lato"
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+    font-family: var(--font-titulo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#principal{
+    background-color: #eff0f4;
+    max-width: 1080px;
+    padding: 60px;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+
+#principal, #cabecalho{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#principal, #cabecalho, #logo-e-config, .logoMarcar,
+.logo{
+    width: 200px;
+}
+#principal, #cabecalho, #logo-e-config, .imgConfig,.configurações{
+    width: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#principal , #cabecalho , #logo-e-config{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#principal > #cabecalho > #EspacoBotao{
+    width: 100%;
+    height: 150px;
+    background-color: #efbe23;
+    border-radius: 35px;
+    padding: 0px 30px 0 50px;
+}
+
+#principal, #cabecalho, #EspacoBotao{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#principal, #cabecalho, #EspacoBotao, .textoAdd , p{
+    font-size: 50px;
+    color: #ffff;
+}
+
+#principal > #cabecalho > #EspacoBotao > .ImgMais{
+    display: flex;
+    align-items: center;
+}
+
+#principal > #cabecalho > #EspacoBotao:active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset; 
+}
+
+#principal > #cabecalho > #EspacoBotao > .ImgMais > img{
+    width: 80px;
+}
+
+#container{
+    margin-top: 30px;
+}
+#container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+ #section-manha{
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+#container, #section-manha, .cabecalho-manhã{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 35px;
+}
+#container, #section-manha, .cabecalho-manhã, .imgManha{
+    display: flex;
+    align-items: center;
+}
+#container > #section-manha >  .cabecalho-manhã > .imgManha > p{
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#container, #section-manha, .txtHorario, p{
+    color: black;
+    font-size: 40px;
+}
+#container> #section-manha > #atividades {
+    width: 100%;
+}
+
+#container> #section-manha > #atividades > .Atv{
+    width: 100%;
+    height: 100px;
+    background-color: #e5e6e8;
+    display: flex;
+    border-radius: 15px;
+    margin-top: 30px;
+    
+}
+
+#container> #section-manha > #atividades > .Atv > .IconeEtexto{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+#container> #section-manha > #atividades > .Atv > .horaCheckBox{
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+#container> #section-manha > #atividades > .Atv > .horaCheckBox{
+    justify-content: right;
+    padding-right: 30px;
+}
+#container> #section-manha > #atividades > .Atv > .horaCheckBox > .hora{
+    font-size: 30px;
+    font-weight: 600;
+    color: #FF5562;
+    margin-right: 20px;
+}
+
+#container> #section-manha > #atividades > .Atv > .horaCheckBox > .checkout > input.chack{
+    border-radius: 5px;
+    border: 5px solid #FF5562;
+    width: 30px;
+    height: 30px;    
+}
+
+#container> #section-manha > #atividades > .Atv > .IconeEtexto > .iconeImg > img{
+    width: 100px;
+}
+
+#container> #section-manha > #atividades > .Atv > .IconeEtexto > .iconeImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 109px;
+}
+
+#container> #section-manha > #atividades > .Atv > .IconeEtexto > .iconeImg > .gradua{
+    width: 60px;
+
+}
+#container> #section-manha > #atividades > .Atv > .IconeEtexto > .iconeImg > .almoco{
+    width: 80px;
+}
+
+
+/*Estilização da tarde*/
+#section-tarde{
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#container, #section-tarde, .cabecalho-tarde{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 35px;
+}
+#container, #section-tarde, .cabecalho-tarde, .imgTarde{
+    display: flex;
+    align-items: center;
+}
+#container > #section-tarde >  .cabecalho-tarde > .imgTarde > p{
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#container, #section-tarde, .txtHorario, p{
+    color: black;
+    font-size: 40px;
+}
+#container> #section-tarde > #atividades2 {
+    width: 100%;
+}
+
+#container> #section-tarde > #atividades2 > .Atv{
+    width: 100%;
+    height: 100px;
+    background-color: #e5e6e8;
+    display: flex;
+    border-radius: 15px;
+    margin-top: 30px;
+    
+}
+
+#container> #section-tarde > #atividades2 > .Atv > .IconeEtexto{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+#container> #section-tarde > #atividades2 > .Atv > .horaCheckBox{
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+#container> #section-tarde > #atividades2 > .Atv > .horaCheckBox{
+    justify-content: right;
+    padding-right: 30px;
+}
+#container> #section-tarde > #atividades2 > .Atv > .horaCheckBox > .hora{
+    font-size: 30px;
+    font-weight: 600;
+    color: #007EE5;
+    margin-right: 20px;
+}
+
+#container> #section-tarde > #atividades2 > .Atv > .horaCheckBox > .checkout > input.chack{
+    border-radius: 5px;
+    border: 5px solid #FF5562;
+    width: 30px;
+    height: 30px;    
+}
+
+#container> #section-tarde > #atividades2 > .Atv > .IconeEtexto > .iconeImg > img{
+    width: 100px;
+}
+
+#container> #section-tarde > #atividades2 > .Atv > .IconeEtexto > .iconeImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 109px;
+}
+
+#container> #section-tarde > #atividades2 > .Atv > .IconeEtexto > .iconeImg > .gradua{
+    width: 60px;
+
+}
+#container> #section-tarde > #atividades2 > .Atv > .IconeEtexto > .iconeImg > .almoco{
+    width: 80px;
+}
+
+
+/*Estilização noite*/
+
+#section-noite{
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+#container, #section-noite, .cabecalho-noite{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 35px;
+}
+#container, #section-noite, .cabecalho-noite, .imgNoite{
+    display: flex;
+    align-items: center;
+}
+#container > #section-noite >  .cabecalho-noite > .imgNoite > p{
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#container, #section-noite, .txtHorario, p{
+    color: black;
+    font-size: 40px;
+}
+#container> #section-noite > #atividades3 {
+    width: 100%;
+}
+
+#container> #section-noite > #atividades3 > .Atv{
+    width: 100%;
+    height: 100px;
+    background-color: #e5e6e8;
+    display: flex;
+    border-radius: 15px;
+    margin-top: 30px;
+    
+}
+
+#container> #section-noite > #atividades3 > .Atv > .IconeEtexto{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+#container> #section-noite > #atividades3 > .Atv > .horaCheckBox{
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+#container> #section-noite > #atividades3 > .Atv > .horaCheckBox{
+    justify-content: right;
+    padding-right: 30px;
+}
+#container> #section-noite > #atividades3 > .Atv > .horaCheckBox > .hora{
+    font-size: 30px;
+    font-weight: 600;
+    color: #FF5562;
+    margin-right: 20px;
+}
+
+#container> #section-noite > #atividades3 > .Atv > .horaCheckBox > .checkout > input.chack{
+    border-radius: 5px;
+    border: 5px solid #FF5562;
+    width: 30px;
+    height: 30px;    
+}
+
+#container> #section-noite > #atividades3 > .Atv > .IconeEtexto > .iconeImg > img{
+    width: 100px;
+}
+
+#container> #section-noite > #atividades3 > .Atv > .IconeEtexto > .iconeImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 109px;
+}
+
+#container> #section-noite > #atividades3 > .Atv > .IconeEtexto > .iconeImg > .gradua{
+    width: 60px;
+
+}
+#container> #section-noite > #atividades3 > .Atv > .IconeEtexto > .iconeImg > .almoco{
+    width: 80px;
+}
+
+/*Responsividade para dispositivos com telas menores que 320px*/
+@media (max-width: 500px){
+    #cabecalho > #logo-e-config > .logoMarcar > .logo{
+        width: 150px;
+    }
+    #cabecalho > #logo-e-config > .imgConfig > .configurações{
+        width: 30px;
+    }
+
+    #principal{
+        padding: 10px;
+    }
+
+    #principal > #cabecalho > #EspacoBotao{
+        height: 80px;
+    }
+
+    #principal > #cabecalho > #EspacoBotao > .textoAdd > p{
+        font-size: 25px;
+        color: #e5e6e8;
+    }
+
+    #principal > #cabecalho > #EspacoBotao > .ImgMais > img{
+        width: 40px;
+    }
+
+
+    #principal > #container{
+        width: 100%;
+
+    }
+
+    #principal > #container > #section-manha{
+        padding: 15px;
+    }
+
+    #principal > #container > #section-manha > .cabecalho-manhã > .imgManha > img{
+        width: 45px;
+    }
+
+    #principal > #container > #section-manha > .cabecalho-manhã > .imgManha > p{
+        font-size: 25px;
+        margin-left: 15px;
+    }
+
+    #principal > #container > #section-manha > .cabecalho-manhã > .txtHorario > p{
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    #principal > #container > #section-manha > #atividades > .Atv > .IconeEtexto > .iconeImg{
+        width: 50px;
+
+    }
+
+    #principal > #container > #section-manha > #atividades > .Atv > .IconeEtexto > .iconeImg > img{
+        width: 60px;
+    }
+
+    #principal > #container > #section-manha > #atividades > .Atv > .IconeEtexto > .iconeImg > .gradua{
+        width: 60px;
+        padding-left: 20px;
+    }
+
+    #principal > #container > #section-manha > #atividades > .Atv > .IconeEtexto > .iconeImg > .almoco{
+        width: 40px;
+        margin-left: 20px;
+    }
+
+    #principal > #container > #section-manha > #atividades > .Atv > .IconeEtexto{
+        width: 60%;
+    }
+
+    #principal > #container > #section-manha > #atividades > .Atv > .IconeEtexto > .AtvText > p{
+        font-size: 20px;
+        margin-left: 15px;
+    }
+
+    #principal > #container > #section-manha > #atividades > .Atv > .horaCheckBox{
+        padding-right: 10px;
+    }
+
+    #principal > #container > #section-manha > #atividades > .Atv > .horaCheckBox{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #principal > #container > #section-manha > #atividades > .Atv > .horaCheckBox > .hora{
+        font-size: 18px;
+    }
+
+    #principal > #container > #section-manha > #atividades > .Atv > .horaCheckBox > .checkout > .chack{
+        width: 20px;
+        height: 20px;
+        display: flex;
+    }
+
+
+
+    #cabecalho > #logo-e-config > .logoMarcar > .logo{
+        width: 150px;
+    }
+    #cabecalho > #logo-e-config > .imgConfig > .configurações{
+        width: 30px;
+    }
+
+    #principal{
+        padding: 10px;
+    }
+
+    #principal > #cabecalho > #EspacoBotao{
+        height: 80px;
+    }
+
+    #principal > #cabecalho > #EspacoBotao > .textoAdd > p{
+        font-size: 25px;
+        color: #e5e6e8;
+    }
+
+    #principal > #cabecalho > #EspacoBotao > .ImgMais > img{
+        width: 40px;
+    }
+
+
+    #principal > #container{
+        width: 100%;
+
+    }
+
+    #principal > #container > #section-tarde{
+        padding: 15px;
+    }
+
+    #principal > #container > #section-tarde > .cabecalho-tarde > .imgTarde > img{
+        width: 45px;
+    }
+
+    #principal > #container > #section-tarde > .cabecalho-tarde > .imgTarde > p{
+        font-size: 25px;
+        margin-left: 15px;
+    }
+
+    #principal > #container > #section-tarde > .cabecalho-tarde > .txtHorario > p{
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    #principal > #container > #section-tarde > #atividades2 > .Atv > .IconeEtexto > .iconeImg{
+        width: 50px;
+
+    }
+
+    #principal > #container > #section-tarde > #atividades2 > .Atv > .IconeEtexto > .iconeImg > img{
+        width: 60px;
+    }
+
+    #principal > #container > #section-tarde > #atividades2 > .Atv > .IconeEtexto > .iconeImg > .gradua{
+        width: 60px;
+        padding-left: 20px;
+    }
+
+    #principal > #container > #section-tarde > #atividades2 > .Atv > .IconeEtexto > .iconeImg > .almoco{
+        width: 40px;
+        margin-left: 20px;
+    }
+
+    #principal > #container > #section-tarde > #atividades2 > .Atv > .IconeEtexto{
+        width: 60%;
+    }
+
+    #principal > #container > #section-tarde > #atividades2 > .Atv > .IconeEtexto > .AtvText > p{
+        font-size: 20px;
+        margin-left: 15px;
+    }
+
+    #principal > #container > #section-tarde > #atividades2 > .Atv > .horaCheckBox{
+        padding-right: 10px;
+    }
+
+    #principal > #container > #section-tarde > #atividades2 > .Atv > .horaCheckBox{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #principal > #container > #section-tarde > #atividades2 > .Atv > .horaCheckBox > .hora{
+        font-size: 18px;
+    }
+
+    #principal > #container > #section-tarde > #atividades2 > .Atv > .horaCheckBox > .checkout > .chack{
+        width: 20px;
+        height: 20px;
+        display: flex;
+    }
+
+
+}
