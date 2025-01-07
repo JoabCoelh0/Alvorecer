@@ -571,3 +571,15 @@ body{
 
 
 }
+
+
+@media (max-width: 438px){
+    #principal > #container > #section-manha > #atividades > .Atv > .horaCheckBox > .hora{
+        font-size: 15px;
+    }
+
+    #principal > #container > #section-tarde > #atividades2 > .Atv > .horaCheckBox > .hora{
+        font-size: 15px;
+    }
+}
+
